@@ -6,26 +6,51 @@
     <title>Grocify</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class=" mx-auto px-4 b min-h-screen lg:px-12 " style="background-image: url(./images/background.png);">
-        <header >
-            <nav class="flex items-center justify-between bg-transparent p-6">
-                <div class="w-32">
+    <div class=" mx-auto px-8 py-8 lg:px-24 min-h-screen " style="background-image: url(./images/background.png);">
+        <header  >
+            <nav class="flex items-center justify-between bg-transparent pb-6 ">
+                <div class="w-28 lg:w-32">
                     <img src="./images/logo.png" alt="">
                 </div>
-                <div class="text-white hidden sm:hidden md:hidden lg:flex lg:gap-5">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Features</a>
-                    <a href="#">Contact</a>
+                <div class="text-white text-lg lg:text-xl hidden lg:flex gap-4 lg:gap-10">
+                    <a href="#" class="hover:border-b hover:border-yellow-300 hover:text-yellow-300 transition-all duration-200
+                    ">Home</a>
+                    <a href="#" class="hover:border-b hover:border-yellow-300 hover:text-yellow-300 transition-all duration-200
+                    ">About</a>
+                    <a href="#" class="hover:border-b hover:border-yellow-300 hover:text-yellow-300 transition-all duration-200
+                    ">Features</a>
+                    <a href="#" class="hover:border-b hover:border-yellow-300 hover:text-yellow-300 transition-all duration-200
+                    ">Contact</a>
                 </div>
-                <div class="w-8">
+                <div class="text-white text-xl order-first sm:block lg:hidden ">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="w-6">
                     <img src="./images/cart.png" alt="">
                 </div>
             </nav>
         </header>
+    <main >
+        <section class="flex flex-col-reverse items-center justify-around my-4 lg:flex-row gap-6">
+            <div class="text-white flex flex-col gap-3">
+                <h2 class="font-extrabold text-3xl lg:text-4xl">Groceries Delivery in <span class="font-normal">15 minutes</span></h2>
+                <p>Grocify offer a wide range of products including fresh products,meats,dairy,baked goods and non-perishable items.</p>
+                <div class="my-4 flex gap-2">
+                    <button type="button" class="bg-yellow-300 px-4 py-2 rounded-3xl inline-block hover:bg-transparent hover:border hover:border-yellow-300 transition ease-in duration-200 text-black hover:text-white">Order now</button>
+                    <button type="button" class="border border-yellow-300 hover:borer-0 hover:bg-yellow-300 px-4 py-2 rounded-3xl inline-block hover:text-black text-white transition ease-in duration-200">Download App <span class="">&#10148;</span></button>
     
+                </div>
+    
+            </div>
+            <div class="w-full lg:w-1/2">
+                <img src="./images/grocery-image.png" alt="">
+            </div>
+        </section>
+    </main>
     </div>
 
 </body>
